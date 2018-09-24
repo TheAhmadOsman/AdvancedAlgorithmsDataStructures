@@ -1,0 +1,38 @@
+1
+    List, in Python, behaves like a bunch of post office boxes where each index in the list has an unique address like the post office does with its boxes. Each address can store values like each box can store mail.
+
+2
+    There is a difference between accessing an element within a Python list and accessing the content of a post office box. This is because that the increase of number of boxes would lead to more time being spent on searching for a specific box, while for an index in a Python list, the access time is constant.
+
+3
+    To calculate runtime in seconds in Python
+
+    import time
+    start = time.time()
+    lst = list(range(10000))
+    end = time.time()
+    time_taken = end - start
+    print(time_taken, "seconds.")
+
+4
+    When speaking about algorithmex complexity, an algorithm that has a quadratic growth of O(n^2) is better than that of an exponential growth of O(2^n). It might not matter when dealing with small amount of data, as both algorithms would seem to perform in a similar way, howver, as the input size gorws, the exponential algorithm would be much slower than a quadratic algorithm.
+
+5
+    An algorithm with O(n^2) is an algorithm of quadratic growth, meaning that as the input size increases, the processing increases by a quadratic order. For example, if it takes 10 seconds for 10 elements to be processed, the same quadratic algorithm would take 100 seconds to process 20 elements.
+
+6
+    When doing a proof by induction, there are two parts:
+        The first one is base case, or the initial step, usually proved by substituting the n number with 1.
+        The second step is for the inductive hypothesis to be satisfied.
+
+7
+    This algorithm would perform under a performance complexity of O(n^2). Although the number of operations decreases by two every time the loop gets executed, however, the dominant term in the final equation would be = n ^ 2 (n^2/4 + n/2), and by dropping the non-dominant terms, the result would become O(n^2) for the time complexity.
+
+8
+    Lets assume that the input size is 10, if algorithm A takes 10 steps, then this algorithm is O(n), and the algorithm for B is O(n^2). This question is tricky because the input size is not specified, and this is a a hypothesis that I assumed since both algoriths are supposed to process the data in the same way and the resulting number of space look convenient with O(n) and O(n^2) for algorithms A and B respectively.
+
+9
+    The append method in Python's list module is more efficient than the addition operator for adding 2 lists as it requires a reallocation of the memory to create a new copy of the original list and then add next to it the newly added list. However, the append method does not do that, and uses a method of allocating capaicity for the list and keeping count of the elements, and as soon as the count is equal to capacity, the list's space gets dynamically increase by a certain ration (assume doubled for our case), which takes less time than making a copy for every addition operation between two lists.
+
+10
+    Binary search is an algorithm for searching on a sorted list. Its complexity is O(log n). It is a typical divide and conquer algorithm. It divides a list and looks at the half, and since it is an ordered list, if the value we are looking at is on the right side of the list, we go to that and divide it one more time and redo this step one more time, if it is not, we go to the left side of the list and redo the same step, this algorithm will keep going until the only value left is the one we are looking for, otherwise the value is not present in this list.

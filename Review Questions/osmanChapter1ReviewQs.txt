@@ -1,0 +1,34 @@
+6-
+    dct = {"Kent": "Denise", "Steve": "Lindy"}
+
+7- 
+    dct = {}
+    dct["Kent"] = "Denise"
+    dct["Steve"] = "Lindy"
+
+8-
+    __lt__(self,y) is the magical method called when x < y is being evaluated. The method is being called from the class that the x variable references an object of.
+
+9-
+    __lshift__(self, other) is the magical method called when x << y is being evaluated.
+
+10-
+    The loop and a half problem is a problem where the loop depends on a variable that needs to be evaluated before the loop itself starts and the evaluation of that variable and its relative condition keep repeating in the loop after the initial evaluation. It relates to reading file, where reading a file begins outside of the loop, and then checking if something was read happens in the loop itself, and reading the next line happens at the end of the loop for the loop condition to be checked once more after. The half part is the reading part outside of the loop at the beginning.
+
+11-
+    No, because an XML file is in standard structure and isn't in a multi-line record structure. It provides us with enough assurance that a for loop would be enough since the standard structure takes care of the beginning and the end of the file and we don't need to worry about surprising entries that can occur in a multi-line record files.
+
+12-
+    Operator overloading makes it possible for the programmer to interact with objects in a very natural way. It allows our defined objects to support different operators. Polymorphism is to have many forms of the same thing where there can be many ways that a particular behavior might be implemented. Those two concepts are supported by Python and are similar in terms of their OOP nature as they give us natural ways for objects to be treated and accessed in Python without going through specific methods or calling multiple classes bur just calling a container class.
+
+
+13-
+    I would use the accumulator pattern
+
+    def add_to_n(x):
+    total = 0
+    for counter in range(2, x+1):
+        if counter % 2 == 0:
+            total = total + counter
+
+    return total

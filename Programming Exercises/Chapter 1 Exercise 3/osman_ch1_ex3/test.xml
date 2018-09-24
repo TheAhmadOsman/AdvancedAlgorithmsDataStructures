@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<GraphicsCommands>
+    <Command x="-2.0" y="-41.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="10.0" font="Didot" color="#000000">Write</Command>
+    <Command x="-170.0" y="-83.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="10.0" font="Cochin" color="#000000">Write</Command>
+    <Command x="43.0" y="-172.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="10.0" font="Hiragino Maru Gothic ProN" color="#000000">Write</Command>
+    <Command x="137.0" y="29.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="10.0" font="Krungthep" color="#000000">Write</Command>
+    <Command x="18.0" y="128.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="10.0" font="Gujarati Sangam MN" color="#000000">Write</Command>
+    <Command x="-128.0" y="17.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="10.0" font="Luminari" color="#000000">Write</Command>
+    <Command x="151.0" y="182.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Luminari" color="#000000">Write</Command>
+    <Command x="-266.0" y="121.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Hiragino Kaku Gothic StdN" color="#000000">Write</Command>
+    <Command x="-168.0" y="-42.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Luminari" color="#000000">Write</Command>
+    <Command x="-39.0" y="-187.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Hiragino Sans" color="#000000">Write</Command>
+    <Command x="175.0" y="-165.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Hiragino Sans GB" color="#000000">Write</Command>
+    <Command x="279.0" y="37.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Muna" color="#000000">Write</Command>
+    <Command x="223.0" y="61.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Hiragino Mincho ProN" color="#000000">Write</Command>
+    <Command x="149.0" y="93.0" width="1.0" color="#000000">GoTo</Command>
+    <Command phrase="CS360!" size="25.0" font="Apple Braille" color="#000000">Write</Command>
+</GraphicsCommands>
