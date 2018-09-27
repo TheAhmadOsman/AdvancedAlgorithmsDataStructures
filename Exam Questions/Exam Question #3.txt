@@ -1,0 +1,2 @@
+Test question topic will be on sets and their implementation as hash tables. 
+Test question will be us writing add, remove, and rehash for the HashSet class
