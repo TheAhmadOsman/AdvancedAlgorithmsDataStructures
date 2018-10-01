@@ -1,0 +1,19 @@
+Heap: 
+    A balanced Binary Tree. 
+    The root of the heap is the smallest (or greatest).
+    The lft and right subtrees are also heaps.
+    Heap is a complete binary tree.
+
+    Full binary tree: each parent has a full... Read this for the differences http://web.cecs.pdx.edu/~sheard/course/Cs163/Doc/FullvsComplete.html
+
+    Picture
+
+Example
+    Build a heap for these values:
+        10, 5, 8, 7, 2, 9, 4
+
+parentIdx = (childIdx -1) // 2
+childIdx1 = parentIdx * 2 + 1
+childIdx2 = parentIdx * 2 + 2
+
+Complexity of building heaps are O(n), worst case for each elemnt is O(log n), best is O(1)
