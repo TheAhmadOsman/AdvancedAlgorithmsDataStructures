@@ -1,0 +1,3 @@
+The list's size does not increase each time you add an item
+Load factor
+The load factor keeps the length of the chain short.
