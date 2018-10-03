@@ -1,1 +1,5 @@
 Test question on binary search trees, going along with ordered tree set.
+
+Binary search trees and inserting, deleting from a binary search tree, no code, just pictures. Show insertions and deletions from a binary search tree.
+
+Paper Example - YouTube!

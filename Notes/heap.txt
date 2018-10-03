@@ -17,3 +17,17 @@ childIdx1 = parentIdx * 2 + 1
 childIdx2 = parentIdx * 2 + 2
 
 Complexity of building heaps are O(n), worst case for each elemnt is O(log n), best is O(1)
+
+----------------------------------------------------------------------------------------------------------------
+
+10, 5, 18, 2, 9, 7, 4
+
+                        10                      -> 2^(h-3) might move 2 times
+            5                       18          -> 2^(h-2) might move 1 times
+        2       9              7       4        -> 2^(h-1) move 0
+
+Stifdown From To
+Google building heaps in O(n)
+
+2^h -1 = number of nodes where h is the height.
+
