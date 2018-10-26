@@ -1,0 +1,1 @@
+The test question this week will be a question where you will be presented with a problem and you will have to choose appropriate data structures and/or algorithms for solving the problem. There may be some coding or pseudo coding, but the question will be about you choosing the best data structures and/or algorithm for solving the problem. 
