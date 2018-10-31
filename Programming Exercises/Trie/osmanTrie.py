@@ -1,6 +1,6 @@
 # Ahmad M. Osman - Dr. Kent Lee, CS360
 
-# Dr. Lee, please notice that if multiple words were seperated by nothing but punctuation, like "Happiness.--That", my string manipulation to remove punctuation will transfer it into "happinessthat". I did not want to put more time into cleaning the words as leaving "happinessthat" like it that is helping to test the Bloom Filter.
+# Dr. Lee, please notice that if multiple words were seperated by nothing but punctuation, like "Happiness.--That", my string manipulation to remove punctuation will transfer it into "happinessthat". I did not want to put more time into cleaning the words as leaving "happinessthat" like it that is helping to test the Trie.
 
 
 import string
@@ -14,7 +14,7 @@ class Trie:
         elif node == None:
             node = Trie.TrieNode(item[0])
         if node.item == item[0]:
-            if node.follows is None:
+            if node.follows == None:
                 if item == "$":
                     Trie.__insert(None, "")
                 else:
@@ -22,7 +22,7 @@ class Trie:
             else:
                 Trie.__insert(node.follows, item[1:])
         else:
-            if node.next is None:
+            if node.next == None:
                 node.next = Trie.__insert(Trie.TrieNode(item[0]), item)
             else:
                 Trie.__insert(node.next, item)
