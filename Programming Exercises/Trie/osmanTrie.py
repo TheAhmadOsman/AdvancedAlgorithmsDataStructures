@@ -9,22 +9,27 @@ import string
 
 class Trie:
     def __insert(node, item):
-        """# This is the recursive insert function.
         if len(item) == 0:
-            return None
-        elif node == None:
-            print(item[0])
+            raise ValueError("Inserting empty item into Trie!")
+
+        if node == None:
             node = Trie.TrieNode(item[0])
-            node.follows = Trie.TrieNode("")
-            Trie.__insert(node.follows, item[1:])
-        elif item[0] == node.item:
-            print('\t' + item[0])
-            node.follows = Trie.TrieNode("")
-            Trie.__insert(node.follows, item[1:])
-        else:
-            print('\t\t' + item)
-            node.next = Trie.TrieNode(item[1:2])
-            Trie.__insert(node.next, item) """
+            item = item[1:]
+
+        original_node = node
+
+        for letter in item:
+            if node.item == letter:
+                print(letter)
+                node = node.follows
+                continue
+            elif node.item == None:
+                node.item = letter
+                node.follows = Trie.TrieNode(letter)
+                node = node.follows
+            elif node.item != letter:
+                node.next = Trie.TrieNode(letter)
+                node = node.next
 
     def __contains(node, item):
         """# This is the recursive membership test.
