@@ -1,0 +1,17 @@
+The test question will be over BloomFilters and Trie
+    Write a little code
+    Understand the code well engough
+        contains methods for both
+        insert method
+    He won't ask to figure the number of hashes or bits for the bloom filter
+        We won't be writing the code for that
+    We should understand the computational complexity of both data structures
+    
+    For the bloomfilter, the complexity is not dependendent via the natural log on the false positives
+        For all practical purposes, the number of hash functions do not grow significantly...
+            The number of hashes do not affect us
+    
+        To conclude that, finally: The complexity of the bloom filter is big oh of 1 for insertion and lookup... It is very close to Big oh of 1
+
+    For the trie, it is bounded by a constant (26 letters for the spell checkers)... 
+        Big Oh of 1 for lookup and insertions. Not just very close. It is Big oh of 1
