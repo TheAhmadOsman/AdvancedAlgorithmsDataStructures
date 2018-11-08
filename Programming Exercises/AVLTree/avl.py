@@ -122,7 +122,7 @@ class AVLTree:
         actual work is done by other methods.
       '''
       self.count += 1
-      found, pathStack, parent, pivot = self.search(newItem)
+      pivot, pathStack, parent, found = self.search(newItem)
 
       if parent == None:
          self.root = AVLNode(newItem)
@@ -290,7 +290,7 @@ class AVLTree:
         reference to that matching node.)  If there is no match, parent is a 
         reference to the node used to add a child in insert().
       '''
-      found, pathStack, parent, pivot = False, Stack(), self.root, None
+      pivot, theStack, parent, found = None, Stack(), self.root, False
 
       if self.count > 0:
         node = self.root
@@ -298,7 +298,7 @@ class AVLTree:
           if newItem == node.item:
             found = True
           else:
-            pathStack.push(node)
+            theStack.push(node)
             parent = node
             if node.balance != 0:
               pivot = node
@@ -307,7 +307,7 @@ class AVLTree:
             else:
               node = node.left
 
-      return found, pathStack, parent, pivot
+      return pivot, theStack, parent, found
    
    def check(self):
        try:
@@ -338,6 +338,47 @@ class AVLTree:
 
             
 def main():
+  #  print("Our names are ")
+  #  print()
+  #  a = AVLNode(20, -1)
+  #  b = AVLNode( 30, -1)
+  #  c = AVLNode(-100)
+  #  d = AVLNode(290)
+  #  '''
+  #  print(a)
+  #  print(b)
+  #  '''
+  #  t = AVLTree()
+  #  t.root = b
+  #  b.left = a
+  #  a.left = c
+  #  b.right = d
+  #  t.count = 4
+  #  print(t)
+              
+  #  a = AVLNode(50)
+  #  b = AVLNode(30)
+  #  c = AVLNode(40)
+  #  a.left = b
+  #  b.right = c
+  #  print("Testing rotateLeftThenRight()")
+  #  print(a.rotateLeftThenRight())
+              
+  #  (pivot, theStack, parent, found) = t.search(-70)
+  #  print(pivot.item, parent.item, found)
+  #  print()
+  #  print("The items in the nodes of the stack are: ")
+  #  while not theStack.isEmpty():
+  #     current = theStack.pop()
+  #     print(current.item)
+  #  print()
+
+  #  (pivot, theStack, parent, found) = t.search(25)
+  #  print(pivot.item, parent.item, found)
+   
+  #  (pivot, theStack, parent, found) = t.search(-100)
+  #  print(pivot.item, parent.item, found)
+
   t = AVLTree()
   
   print("Processing a randomly generated tree of 1000 nodes...")
@@ -393,3 +434,28 @@ def main():
    
 if __name__ == '__main__': 
   main()
+
+'''  The output from main():
+[evaluate avltree.py]
+Our names are
+There are 4 nodes in the AVL tree.
+-100 0
+20 -1
+30 -1
+290 0
+
+Testing rotateLeftThenRight()
+30 0
+40 0
+50 0
+
+20 -100 False
+
+The items in the nodes of the stack are: 
+-100
+20
+30
+
+20 20 False
+20 -100 True
+'''
