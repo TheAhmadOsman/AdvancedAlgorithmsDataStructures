@@ -45,11 +45,16 @@ class AVLNode:
             repr(self.balance)+", left="+repr(self.left)+ \
             ", right="+repr(self.right)+")"
  
-   def depth(node):
-      if node == None:
-        return 0
-      return max(node.left.depth() if node.left else 0, node.right.depth() if node.right else 0) + 1
-  
+   def depth(self):
+       if self.left == None and self.right == None:
+           return 1
+       elif self.left == None:
+           return self.right.depth() + 1
+       elif self.right == None:
+           return self.left.depth() +1
+       else:
+           return 1 + max(self.left.depth(), self.right.depth())
+
    def rotateLeft(self):
       '''  Perform a left rotation of the subtree rooted at the
        receiver.  Answer the root node of the new subtree.  
@@ -304,13 +309,18 @@ class AVLTree:
 
       return found, pathStack, parent, pivot
    
-   def check(self, node):
-      if node != None:
-         if node.balance > 2 or node.balance < -2:
-            raise Exception("Wrong balance at node:", node.item)
-      
-         self.check(node.right) 
-         self.check(node.left)
+   def check(self):
+       try:
+         lDepth = self.root.left.depth()
+       except:
+         lDepth = 0
+       try:
+         rDepth = self.root.right.depth()
+       except:
+         rDepth = 0
+       
+       if max(lDepth, rDepth) - min(lDepth, rDepth) > 1:
+           raise ValueError("Tree is invalid at right depth:", rDepth, " - left depth:", lDepth)
   
    def __pushLefts(root, theStack):
       while root != None:
@@ -338,9 +348,10 @@ def main():
   for v in vals:
     t.insert(v)
     try:
-      t.check(t.root)
-    except ValueError:
+      t.check()
+    except ValueError as ve:
       print("Could not insert value", v, "in tree:")
+      print(ve)
       print(repr(t))
 
   count = 0
@@ -361,9 +372,10 @@ def main():
   for v in vals:
     t.insert(v)
     try:
-      t.check(t.root)
-    except ValueError:
+      t.check()
+    except ValueError as ve:
       print("Could not insert value", v, "in tree:")
+      print(ve)
       print(repr(t))
   
   count = 0
