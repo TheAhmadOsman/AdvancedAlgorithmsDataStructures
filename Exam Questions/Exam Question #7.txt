@@ -1,0 +1,3 @@
+There will be a test question Friday. You will be asked to insert values into an AVL tree. Make sure you know who to rotate a subtree and identify the pivot. There will some double rotations as well. 
+
+You will not be asked to write code or maintain balances in the nodes. You can just draw a picture of the nodes in an AVL tree when values are inserted. 
