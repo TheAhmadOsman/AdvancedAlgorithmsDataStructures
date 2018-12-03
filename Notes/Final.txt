@@ -1,0 +1,28 @@
+Be able to make judgements about which data structures are appropriate for a given situation and which is best suited.
+General questions about the appropriatenesss of a data structure may also be asked on the final. 
+Questions about the complexity of an algorithm solution given the use of a data structure or structures may be asked.
+Review all your semester test questions. They may be asked again on the final.
+Binary Search Trees may be on the final.
+Hashing and hash tables may be on the final.
+I may ask a question about Dijkstra's or Kruskal's algorithm. Be able to write code or do an example of solving it.
+Be able to insert values into a heap and show me the result.
+Know the computational complexity of
+    building a heap from the bottom-up
+    inserting a value into a heap
+    deleting a value from a heap
+    heap sorting
+How is a Priority Queue implemented? Provide a PriorityQueue implementation given a Heap datatype.
+Build a Trie from these words (some set of words).
+Build a Bloom Filter from a set of integers, given a hash function or functions and a bytearray datatype. We would use only a small set of bits on the test and any math would be made easy to do.
+Insert a set of values into an AVL Tree and show me a few rotations that result. Be able to recognize when a rotation is performed.
+B-Trees are certainly a possible topic including inserting and deleting from a B-Tree. 
+Depth First, Breadth First, and heuristic searches are possible topics including A*, Best First, and Hill Climbing. 
+Of course, any questions about computational complexity of operations or storage requirements on any of these data structures is fair game.
+Problem solving while using some of these data structures may be a part of the final.
+Minimax will NOT be on the final exam. 
+
+---------------------------------------
+
+quicksort -> O(nlogn) on a list of edges
+
+
