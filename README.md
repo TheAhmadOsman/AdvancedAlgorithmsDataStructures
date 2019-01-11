@@ -19,7 +19,11 @@ I took this class in Fall 2018. Each folder is its own project with the implemen
 * Kruskals
 
 * MISC
+  * General Notes
   * Notes
+    * Code/Pictures/Explanations
+  * Review Questions and Answers
+  * Exam Questions Review
 
 * Ordered Tree Set
 
